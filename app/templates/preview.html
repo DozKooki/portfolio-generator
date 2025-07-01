@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="max-w-xl w-full p-6 bg-gray-800 rounded-lg shadow">
+        <h1 class="text-3xl font-bold mb-4">Preview Your Portfolio</h1>
+        <div class="space-y-2">
+            <p><strong>Name:</strong> {{ data.get('name', 'N/A') }}</p>
+            <p><strong>About:</strong> {{ data.get('about', 'N/A') }}</p>
+            <p><strong>Skills:</strong> {{ data.get('skills', 'N/A') }}</p>
+            <p><strong>Project 1:</strong> {{ data.get('project1', 'N/A') }}</p>
+            <p><strong>Project 2:</strong> {{ data.get('project2', 'N/A') }}</p>
+            <p><strong>Theme:</strong> {{ data.get('theme', 'default') }}</p>
+        </div>
+        <form action="/generate" method="POST" class="mt-6">
+            <!-- Hidden fields to pass data again -->
+            {% for key, value in data.items() %}
+                <input type="hidden" name="{{ key }}" value="{{ value }}">
+            {% endfor %}
+            <button type="submit" class="bg-pink-600 px-4 py-2 rounded hover:bg-pink-700 mt-4">Generate Portfolio ZIP</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="max-w-xl w-full p-6 bg-gray-800 rounded-lg shadow">
+        <h1 class="text-3xl font-bold mb-4">Create Your Portfolio</h1>
+        <form action="/preview" method="POST" class="space-y-4">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded bg-gray-700">
+            <textarea name="about" placeholder="About You" class="w-full p-2 rounded bg-gray-700"></textarea>
+            <input type="text" name="skills" placeholder="Skills (comma separated)" class="w-full p-2 rounded bg-gray-700">
+            <input type="text" name="project1" placeholder="Project 1" class="w-full p-2 rounded bg-gray-700">
+            <input type="text" name="project2" placeholder="Project 2" class="w-full p-2 rounded bg-gray-700">
+            <select name="theme" class="w-full p-2 rounded bg-gray-700">
+                <option value="default">Default</option>
+                <option value="glass">Glass</option>
+                <option value="minimal">Minimal</option>
+                <option value="vibrant">Vibrant</option>
+            </select>
+
+            <button type="submit" class="bg-pink-600 px-4 py-2 rounded hover:bg-pink-700">Preview</button>
+        </form>
+    </div>
+</body>
+</html>
