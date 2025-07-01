@@ -1,7 +1,4 @@
-✅ Got it bro — let me give you a **fully polished, clean `README.md`** all in **one piece**, ready to copy-paste.
-This will be **100% properly formatted Markdown**, with headings, code blocks, and clean style.
 
----
 
 # 🚀 Portfolio Generator
 
