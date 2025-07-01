@@ -1,10 +1,20 @@
+# Portfolio Generator 🚀
 
-
-# 🚀 Portfolio Generator
-
-> A simple, customizable Python + Flask web app that lets users generate their own portfolio websites in seconds — complete with themes, QR codes, and downloadable ZIPs.
+![License](https://img.shields.io/github/license/DozKooki/portfolio-generator?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/DozKooki/portfolio-generator?color=ff69b4&style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/DozKooki/portfolio-generator?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/DozKooki/portfolio-generator?style=for-the-badge)
+![Python](https://img.shields.io/badge/python-3.10-blue?style=for-the-badge)
+![Render](https://img.shields.io/badge/deploy-render-success?style=for-the-badge&color=brightgreen)
+![Visitors](https://komarev.com/ghpvc/?username=DozKooki&color=ff69b4&style=for-the-badge)
+![Made with ❤️ by DozKooki](https://img.shields.io/badge/Made%20with%20❤️%20by-DozKooki-ff69b4?style=for-the-badge)
 
 ---
+
+A professional portfolio website generator built with Flask, supporting multiple themes, QR download, and automatic zipping. Perfect for quickly creating stylish personal websites.
+
+---
+
 
 ## ✨ Features
 
